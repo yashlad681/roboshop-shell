@@ -1,6 +1,6 @@
 pwd=$(pwd)
 systemd_setup(){
-   cp $(pwd)/${component_name}.service /etc/systemd/system/${component_name}.service
+   cp ${pwd}/${component_name}.service /etc/systemd/system/${component_name}.service
  systemctl daemon-reload
  systemctl enable ${component_name}
  systemctl start ${component_name}
