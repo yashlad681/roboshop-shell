@@ -1,6 +1,5 @@
 component_name=catalogue
 source common.sh
-pwd=$(pwd)
 
 
 #cp catalogue.service /etc/systemd/system/catalogue.service
