@@ -18,3 +18,5 @@ nodejs(){
   cd /app
   npm install
 }
+
+pwd=$(pwd)
