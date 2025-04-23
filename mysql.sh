@@ -1,4 +1,4 @@
-if [ -z "${MYSQL_ROOT_PASSWORD}" -o -z "$1" ]; then
+if [ -z "${MYSQL_ROOT_PASSWORD}" -a -z "$1" ]; then
   echo Input password is missing
   exit
 fi
