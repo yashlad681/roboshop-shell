@@ -2,7 +2,7 @@ set -e
 
 if [ -z "$1" ]; then
   echo Input DB pass is missing
-  exit
+  exit 1
 fi
 
 component_name=shipping

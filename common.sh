@@ -7,7 +7,7 @@ systemd_setup(){
 }
 
 app_pre_setup(){
-useradd roboshop
+  id roboshop || useradd roboshop
   rm -rf /app
   mkdir /app
   cd /app

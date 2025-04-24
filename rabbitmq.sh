@@ -1,6 +1,6 @@
 if [ -z "$1" ]; then
   echo Input password is missing
-  exit
+  exit 1
 fi
 
 cp rabbitmq.repo /etc/yum.repos.d/rabbitmq.repo
