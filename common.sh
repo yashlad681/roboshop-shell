@@ -40,7 +40,7 @@ python() {
 }
 
 java(){
-  dfn install maven -y
+  dnf install maven -y
 app_pre_setup
 
   mvn clean package
