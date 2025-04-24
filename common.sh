@@ -13,7 +13,7 @@ useradd roboshop
   cd /app
 #  npm install
   curl -L -o /tmp/${component_name}.zip https://roboshop-artifacts.s3.amazonaws.com/${component_name}-v3.zip
-#  cd /app
+  cd /app
   unzip /tmp/${component_name}.zip
 
 }
@@ -40,7 +40,7 @@ python() {
 }
 
 java(){
-  dnf install maven -y
+  dfn install maven -y
 app_pre_setup
 
   mvn clean package
