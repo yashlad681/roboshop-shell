@@ -24,7 +24,7 @@ nodejs(){
   dnf module enable nodejs:20 -y
   dnf install nodejs -y
 
-app_pre_setup
+  app_pre_setup
 
   npm install
 }
@@ -41,7 +41,7 @@ python() {
 
 java(){
   dnf install maven -y
-app_pre_setup
+  app_pre_setup
 
   mvn clean package
   mv target/${component_name}-1.0.jar ${component_name}.jar
